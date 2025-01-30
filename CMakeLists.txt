@@ -18,5 +18,6 @@ add_library(DL_Framework_Cpp ${SOURCES})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Add executable (if needed later)
-add_executable(main src/main.cpp)
+add_executable(main src/main.cpp
+                    src/tensor.cpp)
 target_link_libraries(main DL_Framework_Cpp)
